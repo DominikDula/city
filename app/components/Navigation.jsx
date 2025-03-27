@@ -7,6 +7,7 @@ import NotificationButton from '@/app/components/NotificationButton';
 import MessageButton from '@/app/components/MessageButton';
 import DesktopNavigation from '@/app/components/DesktopNavigation';
 import Search from '@/app/components/Search';
+import Link from "next/link";
 
 const navigation = [
   { name: 'Domácnosti', href: '#', current: true },
@@ -19,12 +20,14 @@ const navigation = [
 
 const Navigation = ({ showLogo = true, showDesktopNavigation = true, showSearch = true, showMobileMenu = true, showMessages = false, showNotifications = false }) => {
   return (
-    <Disclosure as="nav" className="fixed inset-0 fixed inset-0 z-40 fixed inset-0">
+    <Disclosure as="nav" className="fixed inset-0 fixed inset-0 z-50 fixed inset-0">
       <div className="bg-white shadow-sm mx-auto w-full px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           {showLogo && (
             <div className="flex items-center">
-              <Image src="/icons/logo.svg" width={25} height={25} alt="Logo" />
+              <Link href="/">
+                <Image src="/icons/logo.svg" width={25} height={25} alt="Logo" />
+              </Link>
             </div>
           )}
 

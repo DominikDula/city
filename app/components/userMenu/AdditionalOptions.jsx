@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const AdditionalOptions = () => {
   return (
@@ -7,12 +8,12 @@ const AdditionalOptions = () => {
         { src: '/icons/photoPlaceholder.svg', label: 'Kalkulačka' },
         { src: '/icons/photoPlaceholder.svg', label: 'GPS' },
         { src: '/icons/photoPlaceholder.svg', label: 'Faktúra' },
-        { src: '/icons/photoPlaceholder.svg', label: 'Viac' },
+        { src: '/icons/photoPlaceholder.svg', label: 'Viac' }
       ].map((item, index) => (
-        <div key={index} className="flex flex-col items-center">
-          <Image src={item.src} width={48} height={48} alt={item.label} />
-          <p className="text-xs text-gray-600">{item.label}</p>
-        </div>
+          <Link key={index} href="/calculations" className="flex flex-col items-center cursor-pointer">
+            <Image src={item.src} width={48} height={48} alt={item.label} />
+            <p className="text-xs text-gray-600">{item.label}</p>
+          </Link>
       ))}
     </div>
   );
