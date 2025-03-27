@@ -21,7 +21,7 @@ const MobileMenu = ({ navigation }) => {
       </DisclosureButton>
 
       <div
-        className={`fixed inset-0 z-50 bg-white bg-opacity-90 transition-transform duration-500 ease-out transform ${
+        className={`fixed inset-0 z-50 bg-main dark:bg-nav-dark bg-opacity-90 transition-transform duration-500 ease-out transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
         style={{ height: '100vh' }}
