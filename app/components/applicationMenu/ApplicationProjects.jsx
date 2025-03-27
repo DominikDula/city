@@ -7,15 +7,15 @@ const ApplicationProjects = () => {
       <ul className="space-y-2">
         <li className="flex justify-between items-center">
           <span className="text-sm text-gray-500">Option</span>
-          <ChevronRightIcon className="h-5 w-5 text-gray-400" />
+          <ChevronRightIcon className="h-5 w-5 text-gray-500" />
         </li>
         <li className="flex justify-between items-center">
           <span className="text-sm text-gray-500">Option</span>
-          <ChevronRightIcon className="h-5 w-5 text-gray-400" />
+          <ChevronRightIcon className="h-5 w-5 text-gray-500" />
         </li>
         <li className="flex justify-between items-center">
           <span className="text-sm text-gray-500">Option</span>
-          <ChevronRightIcon className="h-5 w-5 text-gray-400" />
+          <ChevronRightIcon className="h-5 w-5 text-gray-500" />
         </li>
       </ul>
     </div>

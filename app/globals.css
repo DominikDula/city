@@ -6,9 +6,13 @@
 }
 
 @theme inline {
-  --color-main: var(--main-color);
-  --color-main-dark: var(--main-color-dark);
+  --color-main: #F7F8F8;
+  --color-main-dark: #191A1C;
   --color-brand: #55AB26;
+  --color-gray1: #D8DBDF;
+  --color-gray1-dark: #383A42;
+  --color-nav-dark: #1D1E22;
+  --color-card-dark: #25272C;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

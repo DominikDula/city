@@ -14,7 +14,7 @@ const ApplicationMenuContent = ({ isOpen, toggleMenu }) => {
     <>
       {/* Mobile View */}
       <div
-        className={`fixed inset-x-0 bottom-0 z-60 bg-white bg-opacity-90 transition-all duration-500 ease-out transform space-y-4 ${
+        className={`fixed inset-x-0 bottom-0 z-60 bg-main dark:bg-card-dark bg-opacity-90 transition-all duration-500 ease-out transform space-y-4 ${
           isOpen
             ? `${isCalculationsPage ? '-translate-y-20' : 'translate-y-0'} overflow-y-auto`
             : 'translate-y-full'
@@ -33,10 +33,10 @@ const ApplicationMenuContent = ({ isOpen, toggleMenu }) => {
 
       {/* Desktop View */}
       <div
-        className={`hidden md:block fixed md:absolute right-0 top-[60px] z-50 bg-white bg-opacity-90 transition-all duration-500 ease-out transform drop-shadow-md space-y-4 ${
+        className={`hidden md:block fixed md:absolute right-0 top-[60px] z-50 bg-main dark:bg-card-dark bg-opacity-90 transition-all duration-500 ease-out transform drop-shadow-md space-y-4 ${
           isOpen ? 'translate-x-0 overflow-y-auto' : 'translate-x-130'
         }`}
-        style={{ width: '350px', height: 'auto', minHeight: '450px' }}
+        style={{ width: '350px', height: 'auto', minHeight: '470px' }}
       >
         <div className="flex justify-end p-2">
           <DisclosureButton onClick={toggleMenu} className="text-gray-500">

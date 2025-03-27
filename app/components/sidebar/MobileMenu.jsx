@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const MobileMenu = ({ toggleSidebar }) => {
   return (
-    <div className="md:hidden fixed inset-x-0 bottom-0 z-50 bg-white shadow-lg flex justify-between items-center p-2">
+    <div className="md:hidden fixed inset-x-0 bottom-0 z-50 bg-main dark:bg-main-dark shadow-lg flex justify-between items-center p-2">
       <button className="p-2">
         <Image src="/icons/search.svg" width={24} height={24} alt="Search" />
         <span className="text-sm text-gray-500">Option</span>

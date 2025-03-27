@@ -21,7 +21,7 @@ const navigation = [
 const Navigation = ({ showLogo = true, showDesktopNavigation = true, showSearch = true, showMobileMenu = true, showMessages = false, showNotifications = false }) => {
   return (
     <Disclosure as="nav" className="fixed inset-0 fixed inset-0 z-50 fixed inset-0">
-      <div className="bg-white shadow-sm mx-auto w-full px-2 sm:px-6 lg:px-8">
+      <div className="bg-main dark:bg-nav-dark shadow-sm mx-auto w-full px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           {showLogo && (
             <div className="flex items-center">
