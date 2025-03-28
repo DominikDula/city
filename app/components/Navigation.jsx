@@ -3,6 +3,7 @@ import Image from 'next/image';
 import UserMenu from '@/app/components/UserMenu';
 import MobileMenu from '@/app/components/MobileMenu';
 import ApplicationButton from '@/app/components/ApplicationButton';
+import ThemeToggle from '@/app/components/ThemeToggle';
 import NotificationButton from '@/app/components/NotificationButton';
 import MessageButton from '@/app/components/MessageButton';
 import DesktopNavigation from '@/app/components/DesktopNavigation';
@@ -42,6 +43,7 @@ const Navigation = ({ showLogo = true, showDesktopNavigation = true, showSearch 
             {showNotifications && <NotificationButton />}
             {showMessages && <MessageButton />}
             <ApplicationButton />
+            <ThemeToggle />
             <UserMenu />
             {showMobileMenu && (
               <div className="md:hidden">
