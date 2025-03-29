@@ -21,7 +21,7 @@ const MobileMenu = ({ navigation }) => {
       </DisclosureButton>
 
       <div
-        className={`fixed inset-0 z-50 bg-main dark:bg-nav-dark bg-opacity-90 transition-transform duration-500 ease-out transform ${
+        className={`fixed inset-0 z-50 bg-nav dark:bg-nav-dark bg-opacity-90 transition-transform duration-500 ease-out transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
         style={{ height: '100vh' }}
@@ -40,7 +40,7 @@ const MobileMenu = ({ navigation }) => {
               aria-current={item.current ? 'page' : undefined}
               onClick={toggleMenu}
               className={`block px-4 py-2 text-lg font-semibold transition-colors duration-200 ${
-                item.current ? 'font-bold text-gray-700' : 'text-gray-500 hover:text-black'
+                item.current ? 'font-bold text-t-main-hover dark:text-t-main-hover-dark' : 'text-t-main dark:text-t-main-dark hover:text-t-main-hover dark:hover:text-t-main-hover-dark'
               }`}
             >
               {item.name}

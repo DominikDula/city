@@ -11,8 +11,8 @@ const UserMenu = () => {
 
   return (
     <>
-      {isOpen && <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 md:hidden"></div>}
-      <Menu as="div" className="relative ml-3">
+      {isOpen && <div className="fixed w-full inset-0 bg-black/50 backdrop-blur-sm z-40 md:hidden"></div>}
+      <Menu as="div" className="relative">
         <div className="flex items-center">
           <MenuButton onClick={toggleMenu}>
             <Image src="/icons/profile.svg" width={25} height={25} alt="Logo" />

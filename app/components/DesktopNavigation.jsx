@@ -10,7 +10,7 @@ const DesktopNavigation = ({ navigation }) => {
             href={item.href}
             aria-current={item.current ? 'page' : undefined}
             className={classNames(
-              item.current ? 'font-bold text-gray-700' : 'text-gray-500 hover:text-black',
+              item.current ? 'font-bold text-t-main-hover dark:text-t-main-hover-dark' : 'text-t-main dark:text-t-main-dark hover:text-t-main-hover dark:hover:text-t-main-hover-dark',
               'rounded-md px-3 py-2 text-sm font-medium'
             )}
           >

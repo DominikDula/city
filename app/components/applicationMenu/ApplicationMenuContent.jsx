@@ -2,10 +2,10 @@
 
 import { usePathname } from 'next/navigation'
 import { DisclosureButton } from '@headlessui/react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
 import ApplicationProjects from '@/app/components/applicationMenu/ApplicationProjects';
 import FreeApps from '@/app/components/applicationMenu/FreeApps';
 import PaidApps from '@/app/components/applicationMenu/PaidApps';
+import Image from 'next/image';
 
 const ApplicationMenuContent = ({ isOpen, toggleMenu }) => {
   const isCalculationsPage = usePathname() === '/calculations';
@@ -22,8 +22,8 @@ const ApplicationMenuContent = ({ isOpen, toggleMenu }) => {
         style={{ height: '70vh' }}
       >
         <div className="flex justify-end p-2">
-          <DisclosureButton onClick={toggleMenu} className="text-gray-500">
-            <XMarkIcon className="h-8 w-8" />
+          <DisclosureButton onClick={toggleMenu} className="text-t-main dark:text-t-main-dark hover:text-t-main-hover dark:hover:text-t-main-hover-dark">
+            <Image src="/icons/x.svg" width={16} height={16} alt="X" />
           </DisclosureButton>
         </div>
         <ApplicationProjects />
@@ -33,14 +33,14 @@ const ApplicationMenuContent = ({ isOpen, toggleMenu }) => {
 
       {/* Desktop View */}
       <div
-        className={`hidden md:block fixed md:absolute right-0 top-[60px] z-50 bg-main dark:bg-card-dark bg-opacity-90 transition-all duration-500 ease-out transform drop-shadow-md space-y-4 ${
+        className={`hidden md:block fixed md:absolute right-0 top-[45px] rounded-sm z-50 bg-main dark:bg-card-dark bg-opacity-90 transition-all duration-500 ease-out transform drop-shadow-md space-y-4 ${
           isOpen ? 'translate-x-0 overflow-y-auto' : 'translate-x-130'
         }`}
-        style={{ width: '350px', height: 'auto', minHeight: '470px' }}
+        style={{ width: '260px', height: 'auto', minHeight: '456px' }}
       >
         <div className="flex justify-end p-2">
-          <DisclosureButton onClick={toggleMenu} className="text-gray-500">
-            <XMarkIcon className="h-8 w-8" />
+          <DisclosureButton onClick={toggleMenu} className="text-t-main dark:text-t-main-dark hover:text-t-main-hover dark:hover:text-t-main-hover-dark">
+            <Image src="/icons/x.svg" width={16} height={16} alt="X" />
           </DisclosureButton>
         </div>
         <ApplicationProjects />

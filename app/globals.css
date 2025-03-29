@@ -13,8 +13,15 @@
   --color-brand: #55AB26;
   --color-gray1: #D8DBDF;
   --color-gray1-dark: #383A42;
+  --color-nav: #FFFFFF;
   --color-nav-dark: #1D1E22;
   --color-card-dark: #25272C;
+  --color-t-main: #6B7280;
+  --color-t-main-dark: #8E95A2;
+  --color-t-main-hover: #40444C;
+  --color-t-main-hover-dark: #D8DBDF;
+  --color-border-main: #EDEEF1;
+  --color-border-main-dark: #383A42;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

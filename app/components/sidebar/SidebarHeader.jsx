@@ -8,7 +8,7 @@ const SidebarHeader = ({ closeSidebar }) => {
       <Link href="/">
         <Image src="/icons/logo.svg" width={25} height={25} alt="Logo" />
       </Link>
-      <button onClick={closeSidebar} className="md:hidden text-gray-500">
+      <button onClick={closeSidebar} className="md:hidden text-t-main dark:text-t-main-dark hover:text-t-main-hover dark:hover:text-t-main-hover-dark">
         <XMarkIcon className="h-8 w-8" />
       </button>
     </div>

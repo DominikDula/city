@@ -9,7 +9,7 @@ const Search = ({ isMobile }) => {
 
   if (isMobile) {
     return (
-      <div className="fixed bottom-0 left-0 right-0 bg-main dark:bg-nav-dark p-4">
+      <div className="fixed bottom-0 left-0 right-0 bg-nav dark:bg-nav-dark p-4">
         <input
           type="text"
           placeholder="Hľadať"
@@ -20,7 +20,7 @@ const Search = ({ isMobile }) => {
   }
 
   return (
-    <div className="flex mr-2 hidden md:flex">
+    <div className="flex hidden md:flex">
       {isOpen && (
         <input
           type="text"
@@ -28,7 +28,7 @@ const Search = ({ isMobile }) => {
           className="border-b-1 border-gray-300 placeholder-gray-500 focus:outline-none"
         />
       )}
-      <button onClick={toggleSearch} className="text-gray-500 hover:text-gray-700 focus:outline-none">
+      <button onClick={toggleSearch} className="focus:outline-none">
         <Image src="/icons/search.svg" width={25} height={25} alt="SearchIcon" />
       </button>
     </div>

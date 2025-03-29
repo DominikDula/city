@@ -44,7 +44,7 @@ const Sidebar = () => {
       <MobileMenu toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
 
       <div
-        className={`fixed inset-y-0 left-0 w-full bg-main dark:bg-nav-dark shadow-md transform transition-all duration-300 ease-in-out z-50 
+        className={`fixed inset-y-0 left-0 w-full bg-nav dark:bg-nav-dark shadow-xs transform transition-all duration-300 ease-in-out z-50 
           ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
           md:translate-x-0 md:w-16 md:hover:w-64`}
         onMouseEnter={!isMobile ? () => setIsSidebarOpen(true) : undefined}
