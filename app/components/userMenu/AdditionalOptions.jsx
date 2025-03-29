@@ -11,7 +11,7 @@ const AdditionalOptions = () => {
           { src: '/icons/photoPlaceholder.svg', label: 'Viac' },
         ].map((item, index) => (
           <Link key={index} href="/calculations" className="flex flex-col items-center cursor-pointer">
-            <div className="min-w[48px] min-h-[40px] w-[40px] h-[48px rounded-md bg-gray1 dark:bg-gray1-dark"></div>
+            <div className="md:min-h-[40px] md:w-[40px] min-h-[48px] w-[48px] rounded-md bg-gray1 dark:bg-gray1-dark"></div>
             <p className="text-[10px] text-t-main dark:text-t-main-dark hover:text-t-main-hover dark:hover:text-t-main-hover-dark">{item.label}</p>
           </Link>
         ))}
