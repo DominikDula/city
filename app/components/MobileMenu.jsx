@@ -1,9 +1,9 @@
 'use client';
 
 import { DisclosureButton } from '@headlessui/react';
-import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
 import Search from '@/app/components/Search';
+import Image from 'next/image';
 
 const MobileMenu = ({ navigation }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,11 +13,11 @@ const MobileMenu = ({ navigation }) => {
     <>
       <DisclosureButton
         onClick={toggleMenu}
-        className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
+        className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
       >
         <span className="absolute -inset-0.5" />
         <span className="sr-only">Open main menu</span>
-        <Bars3Icon className="block size-6" />
+        <Image src="/icons/m-menu.svg" width={25} height={25} alt="M-menu" />
       </DisclosureButton>
 
       <div
@@ -28,7 +28,7 @@ const MobileMenu = ({ navigation }) => {
       >
         <div className="flex justify-end p-4">
           <DisclosureButton onClick={toggleMenu} className="text-gray-400">
-            <XMarkIcon className="h-8 w-8" />
+            <Image src="/icons/x.svg" width={20} height={20} alt="X icon" />
           </DisclosureButton>
         </div>
         <div className="flex flex-col items-start space-y-4">
