@@ -16,7 +16,7 @@ const MenuContent = ({ isOpen, toggleMenu }) => {
       <div
         className={`fixed inset-x-0 bottom-0 z-50 bg-main dark:bg-card-dark bg-opacity-90 transition-all duration-500 ease-out transform space-y-4 ${
           isOpen
-            ? `${isCalculationsPage ? '-translate-y-20' : 'translate-y-0'} overflow-y-auto`
+            ? `${isCalculationsPage ? '-translate-y-15' : 'translate-y-0'} overflow-y-auto`
             : 'translate-y-full'
         } md:hidden`}
         style={{ height: '70vh' }}
