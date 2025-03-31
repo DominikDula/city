@@ -49,7 +49,7 @@ const Search = ({ isMobile }) => {
   return (
     <div className="flex hidden md:flex">
       <button onClick={toggleSearch} className="focus:outline-none">
-        <Image src="/icons/search.svg" width={25} height={25} alt="SearchIcon" />
+        <Image src="/icons/search.svg" width={20} height={20} alt="SearchIcon" />
       </button>
       {isOpen && (
         <div className="fixed inset-x-0 top-[40px] h-1/2 bg-nav dark:bg-nav-dark bg-opacity-90 backdrop-blur-md z-50 p-6 flex flex-col items-center space-y-4 shadow-xs">

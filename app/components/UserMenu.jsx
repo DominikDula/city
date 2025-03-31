@@ -15,7 +15,7 @@ const UserMenu = () => {
       <Menu as="div" className="relative">
         <div className="flex items-center">
           <MenuButton onClick={toggleMenu}>
-            <Image src="/icons/profile.svg" width={25} height={25} alt="Logo" />
+            <Image src="/icons/profile.svg" width={20} height={20} alt="Logo" />
           </MenuButton>
         </div>
         <MenuContent isOpen={isOpen} toggleMenu={toggleMenu} />

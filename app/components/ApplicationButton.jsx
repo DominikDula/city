@@ -15,7 +15,7 @@ const ApplicationButton = () => {
       <Menu as="div" className="relative">
         <div className="flex items-center">
           <MenuButton onClick={toggleMenu}>
-            <Image src="/icons/applications.svg" width={25} height={25} alt="Applications" />
+            <Image src="/icons/applications.svg" width={20} height={20} alt="Applications" />
           </MenuButton>
         </div>
         <ApplicationMenuContent isOpen={isOpen} toggleMenu={toggleMenu} />

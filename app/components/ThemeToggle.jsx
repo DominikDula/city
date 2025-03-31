@@ -38,9 +38,9 @@ const ThemeToggle = () => {
   return (
     <button onClick={toggleTheme}>
       {theme === 'dark' ? (
-        <Image src="/icons/sun.svg" width={24} height={24} alt="Light Mode" />
+        <Image src="/icons/sun.svg" width={20} height={20} alt="Light Mode" />
       ) : (
-        <Image src="/icons/moon.svg" width={24} height={24} alt="Dark Mode" />
+        <Image src="/icons/moon.svg" width={20} height={20} alt="Dark Mode" />
       )}
     </button>
   );

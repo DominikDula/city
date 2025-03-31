@@ -13,11 +13,11 @@ const MobileMenu = ({ navigation }) => {
     <>
       <DisclosureButton
         onClick={toggleMenu}
-        className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
+        className="relative flex items-center"
       >
         <span className="absolute -inset-0.5" />
         <span className="sr-only">Open main menu</span>
-        <Image src="/icons/m-menu.svg" width={25} height={25} alt="M-menu" />
+        <Image src="/icons/m-menu.svg" width={20} height={20} alt="M-menu" />
       </DisclosureButton>
 
       <div
