@@ -14,7 +14,7 @@ const Search = ({ isMobile }) => {
   if (isMobile) {
     return (
       <>
-        <div className="fixed bottom-0 left-0 right-0 bg-nav dark:bg-nav-dark p-4">
+        <div className="w-full bg-nav dark:bg-nav-dark p-4">
           <input
             type="text"
             placeholder="Hľadať"
