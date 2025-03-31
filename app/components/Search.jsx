@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import {DisclosureButton} from "@headlessui/react";
 
 const Search = ({ isMobile }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +24,13 @@ const Search = ({ isMobile }) => {
         </div>
 
         {isOpen && (
-          <div className="fixed inset-0 top-[40px] bg-nav dark:bg-nav-dark z-50 flex flex-col p-6">
-            <div className="flex justify-between items-center relative pl-8">
+          <div className="fixed inset-0 bg-nav dark:bg-nav-dark z-50 flex flex-col p-4">
+            <div className="flex justify-end">
+              <DisclosureButton onClick={toggleSearch} className="text-gray-400">
+                <Image src="/icons/x.svg" width={20} height={20} alt="X icon" />
+              </DisclosureButton>
+            </div>
+            <div className="flex justify-center items-baseline relative pl-8 w-[80%] mx-auto">
               <Image className="absolute bottom-[2px] -left-[8px]" src="/icons/search.svg" width={32} height={32} alt="Search" />
               <input
                 type="text"
